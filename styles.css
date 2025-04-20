@@ -143,7 +143,7 @@
   .aboutHeading{
     text-align: center;
     font-weight: bold;
-    padding: 1% 0;
+    padding: 10px 0;
     height: 50px;
     font-size: 40px;
   }
@@ -204,12 +204,81 @@
     margin-top: 20px;
   }
 
-  /* skillsSection */
+  /* educationSection */
+  .education {
+    background-color: #e6ecff;
+    color: #333;
+    padding: 10px 20px 50px 20px;
+    height: 900px;
+  }
 
+  .educationHeading {
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  .educationHeading span {
+    color: #9b26b6;
+  }
+
+  .educationContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .educationCard {
+    display: flex;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+    max-width: 1000px;
+    width: 90%;
+    transition: transform 0.3s ease;
+  }
+
+  .educationCard:hover {
+    transform: scale(1.02);
+  }
+
+  .educationCardPart1 img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+  }
+
+  .educationCardPart2 {
+    padding: 20px;
+    flex: 1;
+  }
+
+  .educationCardPart2 h3 {
+    color: #002366;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .educationCardPart2 p {
+    margin: 6px 0;
+    font-size: 16px;
+    color: #444;
+  }
+
+  .educationCardPart2 .educationYear {
+    color: #08873d;
+  }
+
+  /* skillsSection */
   .skills {
     background: linear-gradient(to right, #5f00ba, #6e00ff);
     color: #fff;
-    padding: 60px 20px;
+    padding: 10px 20px 60px 20px;
     height: 1000px;
   }
 
@@ -217,19 +286,21 @@
     text-align: center;
     font-weight: bold;
     font-size: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
   }
 
   .skillsContainer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-    padding: 0 80px;
+    gap: 60px;
+    padding: 0 150px;
     justify-items: center;
+    box-sizing: border-box;
   }
 
   .skillCard {
-    width: 160px;
+    width: 180px;
+    height: 180px;
     padding: 20px;
     background: #0f0f23;
     border-radius: 12px;
@@ -244,14 +315,14 @@
   }
 
   .skillCard img {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     object-fit: contain;
-    margin-bottom: 15px;
+    margin-bottom: 40px;
   }
 
   .skillCard h3 {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500;
     margin: 0;
   }
