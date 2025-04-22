@@ -120,8 +120,13 @@
   }
 
   .social-links img {
-    width: 32px;
-    height: 32px;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    box-sizing: border-box;
+    /* flex-wrap: ; */
+    background-color: white;
+    /* border-radius: 50%; */
   }
   
   /* PROFILE IMAGE */
